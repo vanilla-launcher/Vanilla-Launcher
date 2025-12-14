@@ -11,6 +11,10 @@
       font-family: 'Segoe UI', sans-serif;
       background-color: #121212;
       color: #fff;
+      user-select: none;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
     }
     .hero {
       position: relative;
@@ -37,6 +41,10 @@
       opacity: 0;
       transform: translateY(20px);
       animation: fadeInUp 1s forwards;
+      user-select: none;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
     }
     @keyframes fadeInUp {
       to { opacity: 1; transform: translateY(0); }
@@ -51,6 +59,10 @@
       border-radius: 5px;
       text-decoration: none;
       transition: background 0.3s, transform 0.2s;
+      user-select: none;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
     }
     .download-btn:hover { background-color: #00a10b; transform: scale(1.05); }
     .features {
@@ -67,42 +79,97 @@
       opacity: 0;
       transform: translateY(20px);
       animation: fadeInUp 1s forwards;
+      user-select: none;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
     }
-    .feature img { width: 60px; margin-bottom: 15px; }
-    .feature h3 { font-size: 1.2em; margin-bottom: 10px; color: #fff; }
-    .feature p { color: #ccc; font-size: 0.95em; }
-    footer { text-align: center; padding: 20px; background-color: #121212; color: #888; }
-    @media (max-width: 768px) { .features { flex-direction: column; align-items: center; } }
+    .feature h3 { 
+      font-size: 1.2em; 
+      margin-bottom: 10px; 
+      color: #fff;
+      user-select: none;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+    }
+    .feature p { 
+      color: #ccc; 
+      font-size: 0.95em;
+      user-select: none;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+    }
+    footer { 
+      text-align: center; 
+      padding: 20px; 
+      background-color: #121212; 
+      color: #888;
+      user-select: none;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+    }
+    svg.text-svg {
+      display: block;
+      pointer-events: none;
+      user-select: none;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+    }
+    @media (max-width: 768px) { 
+      .features { flex-direction: column; align-items: center; } 
+    }
   </style>
 </head>
 <body>
 
   <section class="hero">
     <div class="hero-content">
-      <h1>Play Minecraft with Vanilla Launcher</h1>
-      <p>Launch Minecraft 1.21.8 in just 00:29.30 seconds. Fast, stable, and ready to play!</p>
+      <svg class="text-svg" viewBox="0 0 800 80" xmlns="http://www.w3.org/2000/svg">
+        <text x="400" y="50" font-family="'Segoe UI', sans-serif" font-size="36" font-weight="bold" fill="#fff" text-anchor="middle" stroke="none">Play Minecraft with Vanilla Launcher</text>
+      </svg>
+      <svg class="text-svg" viewBox="0 0 800 40" xmlns="http://www.w3.org/2000/svg">
+        <text x="400" y="30" font-family="'Segoe UI', sans-serif" font-size="20" fill="#fff" text-anchor="middle">Launch Minecraft 1.21.8 in just 00:29.30 seconds. Fast, stable, and ready to play!</text>
+      </svg>
       <a href="https://drive.google.com/uc?export=download&id=1KXC5FXII9LkAet1uiPP23NE6lXKEhfw8" class="download-btn">Download for Windows</a>
     </div>
   </section>
   
   <section class="features">
     <div class="feature" style="animation-delay: 0.3s;">
-      <h3>Vanilla Minecraft</h3>
-      <p>Runs the official, unmodified Minecraft 1.21.8 for stability.</p>
+      <svg class="text-svg" viewBox="0 0 300 50" xmlns="http://www.w3.org/2000/svg">
+        <text x="150" y="35" font-family="'Segoe UI', sans-serif" font-size="22" font-weight="bold" fill="#fff" text-anchor="middle">Vanilla Minecraft</text>
+      </svg>
+      <svg class="text-svg" viewBox="0 0 300 60" xmlns="http://www.w3.org/2000/svg">
+        <text x="150" y="40" font-family="'Segoe UI', sans-serif" font-size="16" fill="#ccc" text-anchor="middle" textLength="250">Runs the official, unmodified Minecraft 1.21.8 for stability.</text>
+      </svg>
     </div>
     <div class="feature" style="animation-delay: 0.6s;">
-      <h3>Ultra-Fast Launch</h3>
-      <p>Start Minecraft in just 00:29.30 seconds with no waiting.</p>
+      <svg class="text-svg" viewBox="0 0 300 50" xmlns="http://www.w3.org/2000/svg">
+        <text x="150" y="35" font-family="'Segoe UI', sans-serif" font-size="22" font-weight="bold" fill="#fff" text-anchor="middle">Ultra-Fast Launch</text>
+      </svg>
+      <svg class="text-svg" viewBox="0 0 300 60" xmlns="http://www.w3.org/2000/svg">
+        <text x="150" y="40" font-family="'Segoe UI', sans-serif" font-size="16" fill="#ccc" text-anchor="middle" textLength="250">Start Minecraft in just 00:29.30 seconds with no waiting.</text>
+      </svg>
     </div>
     <div class="feature" style="animation-delay: 0.9s;">
-      <h3>Official Updates</h3>
-      <p>Always up-to-date with the latest stable Minecraft release.Runing the Second UI Update.</p>
+      <svg class="text-svg" viewBox="0 0 300 50" xmlns="http://www.w3.org/2000/svg">
+        <text x="150" y="35" font-family="'Segoe UI', sans-serif" font-size="22" font-weight="bold" fill="#fff" text-anchor="middle">Official Updates</text>
+      </svg>
+      <svg class="text-svg" viewBox="0 0 300 80" xmlns="http://www.w3.org/2000/svg">
+        <text x="150" y="40" font-family="'Segoe UI', sans-serif" font-size="16" fill="#ccc" text-anchor="middle" textLength="250">Always up-to-date with the latest stable Minecraft release.</text>
+        <text x="150" y="65" font-family="'Segoe UI', sans-serif" font-size="16" fill="#ccc" text-anchor="middle" textLength="250">Running the Second UI Update.</text>
+      </svg>
     </div>
-    <div class="feature" style="animation-delay: 0.9s;">
   </section>
 
   <footer>
-    &copy; 2025 Vanilla Launcher. All rights reserved.
+    <svg class="text-svg" viewBox="0 0 400 30" xmlns="http://www.w3.org/2000/svg" style="margin: 0 auto; display: block;">
+      <text x="200" y="25" font-family="'Segoe UI', sans-serif" font-size="14" fill="#888" text-anchor="middle">&copy; 2025 Vanilla Launcher. All rights reserved.</text>
+    </svg>
   </footer>
 
 </body>
